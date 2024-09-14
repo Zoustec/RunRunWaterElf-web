@@ -7,7 +7,7 @@
   <title>RunRunWaterElf</title>
   <link rel="shortcut icon" href="TemplateData/favicon.ico">
   <link rel="stylesheet" href="TemplateData/style.css">
-  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="manifest" href="manifest.webmanifest.json">
   <script src="TemplateData/TouchScript.js"></script>
 </head>
 <body>
@@ -59,15 +59,15 @@
     }
 
     var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/WebGL.loader.js";
+      var loaderUrl = buildUrl + "/WebGL_v1.0.1.loader.js";
       var config = {
-        dataUrl: buildUrl + "/WebGL.data.unityweb",
-        frameworkUrl: buildUrl + "/WebGL.framework.js.unityweb",
-        codeUrl: buildUrl + "/WebGL.wasm.unityweb",
+        dataUrl: buildUrl + "/WebGL_v1.0.1.data.unityweb",
+        frameworkUrl: buildUrl + "/WebGL_v1.0.1.framework.js.unityweb",
+        codeUrl: buildUrl + "/WebGL_v1.0.1.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Zoustec ltd.",
         productName: "RunRunWaterElf",
-        productVersion: "1.0.0",
+        productVersion: "1.0.1web",
         showBanner: unityShowBanner,
       };
 
@@ -86,7 +86,7 @@
           document.getElementsByTagName('head')[0].appendChild(meta);
     }
 	
-      canvas.style.background = "url('" + buildUrl + "/WebGL.jpg.unityweb') center / cover";
+      canvas.style.background = "url('" + buildUrl + "/WebGL_v1.0.1.jpg.unityweb') center / cover";
     loadingBar.style.display = "block";
 
 loadingBar.style.display = "block";
@@ -97,7 +97,7 @@ loadingBar.style.display = "block";
       script.src = loaderUrl;
       script.onload = () => {
         createUnityInstance(canvas, config, (progress) => {
-          progressBarFull.style.width = 100 * progress + "%";
+          progressBarFull.style.width = 100 * progress +9 + "%";
         }).then((unityInstance) => {
 		  gameInstance = unityInstance;
           loadingBar.style.display = "none";

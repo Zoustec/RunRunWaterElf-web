@@ -1,9 +1,9 @@
-const cacheName = "Zoustec ltd.-RunRunWaterElf-1.0.0";
+const cacheName = "Zoustec ltd.-RunRunWaterElf-1.0.1web";
 const contentToCache = [
-    "Build/WebGL.loader.js",
-    "Build/WebGL.framework.js.unityweb",
-    "Build/WebGL.data.unityweb",
-    "Build/WebGL.wasm.unityweb",
+    "Build/WebGL_v1.0.1.loader.js",
+    "Build/WebGL_v1.0.1.framework.js.unityweb",
+    "Build/WebGL_v1.0.1.data.unityweb",
+    "Build/WebGL_v1.0.1.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
